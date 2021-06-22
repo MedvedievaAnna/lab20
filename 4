@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+{
+    string str;
+   Console.Write  ("Enter a string");
+    getline(cin, str);
+    Console.Write ("Target info");
+    int i = -1;
+    while (str[++i])
+    {
+        if (i == str.size() - 1)
+            break;
+        if (str[i] == str.back())
+            Console.Write ( i + 1 << " ");
+    }
+    System("pause");
+}
