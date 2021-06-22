@@ -1,0 +1,26 @@
+using System;
+ 
+public class Program
+{
+   static void Main()
+    {
+        string s = Console.ReadLine();
+        int max = 0, len = 0;
+ 
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (s[i] == ' ')
+            {
+                len++;
+ 
+                if (len > max)
+                    max = len;
+            }
+            else
+                len = 0;
+        }
+ 
+        Console.WriteLine(max);
+        Console.ReadKey();
+    }
+}
