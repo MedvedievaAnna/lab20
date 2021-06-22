@@ -1,0 +1,17 @@
+using System;
+ 
+namespace 14
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string s = "abcae";
+            string res = s.Replace('a', ' ').Replace('b', ' ').Replace('c', ' ');
+            res = res.Trim(' ');
+            res = res.Length == 0 ? "Only" : "Not Only";
+            Console.WriteLine(res);
+            Console.Read();
+        }
+    }
+}
